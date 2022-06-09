@@ -22,6 +22,7 @@ function errorMessage(element, message) {
      const errorDisplay = inputControl.querySelector('.error');
      const exclamationDisplay = document.querySelector('.exclamation');
      element.classList.add('exclamation');
+     errorDisplay.classList.add('active');
      errorDisplay.innerText = message;
      const formInput = inputControl.querySelector('.form-input');
      formInput.style.border = '2px solid var(--red)';
